@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aaroh Nanoti - Portfolio</title>
+    <!-- Include Tailwind CSS for styling -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
+        /* Ensures dynamic balls float smoothly */
         body {
             position: relative;
             overflow: hidden;
@@ -13,21 +15,22 @@
 
         .dynamic-ball {
             position: absolute;
-            border-radius: 50%;
-            animation: float 10s infinite ease-in-out;
+            border-radius: 50%; /* Makes the elements circular */
+            animation: float 50s infinite ease-in-out; /* Adds a floating effect */
         }
 
         @keyframes float {
             0%, 100% {
-                transform: translateY(0);
+                transform: translateY(0); /* Original position */
             }
             50% {
-                transform: translateY(-50px);
+                transform: translateY(-250px); /* Moves up slightly */
             }
         }
     </style>
 </head>
-<body class="bg-black text-orange-400">
+<body class="bg-black text-white-400">
+    <!-- Header section -->
     <header class="bg-orange-600 text-black py-6 rounded-b-2xl">
         <div class="container mx-auto px-4 text-center">
             <h1 class="text-4xl font-bold">Aaroh Nanoti</h1>
@@ -35,7 +38,9 @@
         </div>
     </header>
 
+    <!-- Main content -->
     <main class="container mx-auto px-4 py-10 relative">
+        <!-- About Me section -->
         <section class="mb-10">
             <h2 class="text-3xl font-bold mb-4">About Me</h2>
             <p class="text-lg">
@@ -43,6 +48,7 @@
             </p>
         </section>
 
+        <!-- Projects section -->
         <section class="mb-10">
             <h2 class="text-3xl font-bold mb-4">Projects</h2>
             <ul class="space-y-4">
@@ -61,9 +67,11 @@
             </ul>
         </section>
 
+        <!-- Skills section -->
         <section class="mb-10">
             <h2 class="text-3xl font-bold mb-4">Skills</h2>
             <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                <!-- Skills badges with rounded styling -->
                 <span class="bg-orange-600 text-black py-2 px-4 rounded-full text-center">Python</span>
                 <span class="bg-orange-600 text-black py-2 px-4 rounded-full text-center">Java</span>
                 <span class="bg-orange-600 text-black py-2 px-4 rounded-full text-center">HTML/CSS</span>
@@ -73,19 +81,21 @@
             </div>
         </section>
 
+        <!-- Contact Me section -->
         <section>
             <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
             <p class="text-lg">
-                Feel free to reach out to me via email at <a href="mailto:aaroh.nanoti@utd.edu" class="text-orange-400 underline">aaroh.nanoti@utd.edu</a> or connect with me on <a href="https://linkedin.com/in/aarohnanoti" class="text-orange-400 underline" target="_blank">LinkedIn</a>.
+                Feel free to reach out to me via email at <a href="mailto:aaroh.nanoti@utdallas.edu" class="text-orange-400 underline">aaroh.nanoti@utdallas.edu</a> or connect with me on <a href="https://linkedin.com/in/aarohnanoti" class="text-orange-400 underline" target="_blank">LinkedIn</a>.
             </p>
         </section>
 
-        <!-- Dynamic Balls -->
+        <!-- Dynamic Balls for visual appeal -->
         <div class="dynamic-ball bg-gradient-to-r from-purple-500 to-pink-500 w-32 h-32" style="top: 10%; left: 20%;"></div>
         <div class="dynamic-ball bg-gradient-to-r from-yellow-400 to-red-500 w-40 h-40" style="top: 30%; right: 10%;"></div>
         <div class="dynamic-ball bg-gradient-to-r from-green-400 to-blue-500 w-24 h-24" style="bottom: 20%; left: 40%;"></div>
     </main>
 
+    <!-- Footer section -->
     <footer class="bg-orange-900 text-orange-200 py-6 mt-10 rounded-t-2xl">
         <div class="container mx-auto px-4 text-center">
             <p>&copy; 2025 Aaroh Nanoti. All rights reserved.</p>
